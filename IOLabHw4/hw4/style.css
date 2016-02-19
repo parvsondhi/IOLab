@@ -1,0 +1,104 @@
+body{
+  background-color: #444444;
+  color: #ffffff;
+}
+h2{
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+h3{
+  font-weight: 300;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.container{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+#main-todo-list, #completed-list{
+  margin: 0 auto;
+  text-align: center;
+  width: 46%;
+  height: auto;
+  border-radius: 5px;
+}
+#main-todo-list{
+  float: top;
+}
+#completed-list{
+  float: bottom;
+}
+.add-item-form{
+  display: inline-flex;
+  width: 90%;
+  margin: 0 auto;
+}
+.item{
+  margin: 0 auto;
+  width: 70%;
+  border-radius: 5px;
+}
+.add-button{
+  margin: 0 auto;
+  background-color: #ffffff;
+  border:none;
+  padding: 1% 5%;
+  border-radius: 5px;
+  margin-left: 2%;
+}
+
+.to-do-list{
+  border: 2.5px #ffffff solid;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  height: auto;
+  width: 50%;
+  padding: 2%;
+  text-align: left;
+}
+
+.to-do-list2{
+  text-decoration: line-through;
+  border: 2.5px #ffffff solid;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  height: auto;
+  width: 50%;
+  padding: 2%;
+  text-align: left;
+}
+
+
+.list-item{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
